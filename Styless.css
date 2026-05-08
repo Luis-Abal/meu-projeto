@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+.wrapper {                 /* e igual a <div> e embrulho*/
+    height: 100vh;         /*100vh o container ocupa toda a altura da tela*/
+    width: 100vw;          /*100vh o container ocupa toda a largura da tela*/
+}
+
+.container-left {
+    display: inline-block;   /* ele fica na mesma linha todos os elementos*/
+    width: 60%;              /*ocupa 60% da tela*/
+    padding-left: 136px;     /*padding é o espaçamento referente a caixa(container)*/
+    margin-top: 20%;
+}
+
+.container-right {
+    display: inline-block;  /* ele fica na mesma linha todos os elementos*/
+    background-color: rgba(93, 93, 125, 0.16); /*usamos conversor de cores do google para converter de hex a rgb*/
+    height: 100vh;         /*100vh o container right ocupa toda a altura da tela*/
+    width: 40%;            /*ocupa 40% da tela*/
+    position: absolute;    /*para posicionar o container right no lado dele na tela*/
+}
+
+img{
+    position: relative;     /* posicionamento da imagem*/
+    top: 25%;
+    right: 130px;
+}
+
+h1{
+    font-weight: 400;       /*espessura da fonte*/
+    font-size: 70px;        /*tamanho da fonte*/
+    line-height: 80px;      /*altura da linha da um texto, espaço entre linhas verticais*/
+    color: #5D5D7D;
+    width: 368px;
+}
+
+p{
+   font-weight: 400;      
+   font-size: 28px;        
+   line-height: 48px;      
+   color: #5D5D7D; 
+   opacity: 60%;
+   margin: 15px 0;
+   width: 540px;
+}
+
+button{
+    width: 269px;          /*largura*/
+    height: 62px;          /*altura*/
+    background: #9499EA; /* cor de fundo*/
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.1);          /* sombreado*/
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover{           /*hover e um pseudo elemento, quando passa o mouse sem clicar fica masi transparente*/
+    opacity: .8;
+}
+
+button:active{          /* active e quando clicar no botão fica mais transparente*/
+    opacity: .5;        
+}
+
+a{
+    font-size: 20px;
+    line-height: 41px;
+    color: #5D5D7D;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+a:nth-child(2){         /* quero que meu 2 filho so tenha opacidade*/
+    opacity: .4;
+}
+
+a:hover{
+    opacity: .4;
+}
+
+a:active{
+    opacity: .8;
+}
+
+header{
+    margin: 24px 0 0 57px;
+}
+
+
+@media screen and (max-width: 900px) {    /* começo de responsividade, a parir de 900px vai aplicar tudo o que colocar em baixo*/
+.container-left {
+    width: 100%;                          /*ocupa 100% da tela*/
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    }
+}
+
+.container-right {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    position: static;
+    padding: 40px;
+}
+
+img{
+    position: static;
+    max-width: 90%;
+}
+
+header{
+    display: none;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 52px;
+    width: auto;
+    margin: 58px 50px 0 50px;
+    text-align: center;
+}
+
+p{
+    margin: 15px 40px;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+button{
+    margin: 0 auto;              /*margin auto, ele alinha ao meio automaticamente, mais para usar ele tem que colocar display block */
+    display: block;
+}
+
+
+/*    PARA CELULARES DE TELA MENOR*/
+/*@media screen and (max-width: 330px) {    /* começo de responsividade, a parir de 330px vai aplicar tudo o que colocar em baixo*/
+/*.container-left {
+    height: 70%;                          ocupa 70% da tela
+*/
