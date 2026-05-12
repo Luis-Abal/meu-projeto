@@ -95,7 +95,7 @@ header{
 }
 
 
-@media screen and (max-width: 900px) {    /* começo de responsividade, a parir de 900px vai aplicar tudo o que colocar em baixo*/
+@media screen and (max-width: 901px) {    /* começo de responsividade, a parir de 900px vai aplicar tudo o que colocar em baixo*/
 .container-left {
     width: 100%;                          /*ocupa 100% da tela*/
     height: 50%;
