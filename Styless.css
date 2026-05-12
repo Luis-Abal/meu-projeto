@@ -83,7 +83,7 @@ a:nth-child(2){         /* quero que meu 2 filho so tenha opacidade*/
 }
 
 a:hover{
-    opacity: .4;
+    opacity: .5;
 }
 
 a:active{
